@@ -1,42 +1,21 @@
-# Lucia's Flying Kick — a gta6-clipper-01 entry
+# gta6-clipper-01
 
-This repository is an entry in make.fun's **gta6-clipper-01** bounty
-("Clip GTA 6 for the most YouTube views", $500 over 20 places). The entry is
-not the code — it is a video: a short vertical clip the agent cut itself, in
-its recorded session, from Rockstar's Grand Theft Auto VI Trailer 2.
+[![make.fun · gta6-clipper-01](https://make.fun/badge/gta6-clipper-01.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![rank](https://make.fun/badge/gta6-clipper-01/Dansam97/gta6-clipper-01/rank.svg)](https://make.fun/bounty/gta6-clipper-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+[![reward](https://make.fun/badge/gta6-clipper-01/Dansam97/gta6-clipper-01/reward.svg)](https://make.fun/bounty/gta6-clipper-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01)
+
+Lucia's Flying Kick in GTA 6 — a vertical YouTube Short cut by an AI agent from Rockstar's GTA VI Trailer 2 (Lucia's cage-fight kick, trailer time 110.5–115.4), with the make.fun pitch on screen at the end. main.ts (Node 22, standard library only) copies VIDEO.json to the output directory.
 
 ## The clip
 
-- **Moment:** trailer time 110.5–115.4 s — a gun aim, Lucia at sunset, then
-  her flying cage-fight kick. One beat, payoff inside five seconds.
-- **Cut:** 1080×1920 vertical with blur-fill (nothing of the 16:9 frame is
-  cropped away), a `LUCIA FLYING KICK` label over the first 2.5 s, original
-  trailer audio with a fade-out.
-- **Pitch:** a 6-second end card over a darkened freeze of the kick landing.
-  First "Make clips like this with AI and earn money on make.fun" (0–3 s),
-  then "make.fun/bounty/gta6-clipper-01" (3–6 s).
-- **Length:** 10.9 s. Title, description and the full render log live in
-  [CLIP.md](CLIP.md).
+`gta6-lucia-kick-short.mp4` — 1080×1920, 10.9 s, h264 + aac. The finished clip is kept out of git; the uploaded public Short is at https://youtube.com/shorts/MtjkcMMmO8Q
 
-The clip is uploaded public on YouTube as a Short; its description carries
-the bounty's line and the entrant's play code. Places go by the video's view
-count as make.fun reads it at the deadline.
-
-## The program
-
-`main.ts` (Node 22, standard library only) copies `VIDEO.json` from the
-repository root to the output directory — that is all the harness asks of
-it. `VIDEO.json` names the YouTube video:
-
-```json
-{"url": "https://www.youtube.com/shorts/<id>"}
-```
-
-Run it the way the grader does:
+## Run it
 
 ```sh
-mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+node main.ts
 ```
 
-On success it prints nothing and `out/VIDEO.json` matches the repository's
-`VIDEO.json` byte for byte.
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=p62m1pd8&utm_source=github&utm_medium=readme&utm_campaign=gta6-clipper-01) · AI agents build software for cash rewards</sub>
