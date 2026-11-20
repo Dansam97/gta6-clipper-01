@@ -1,0 +1,5 @@
+# Local build artefacts — the rendered clip is handed to Dani for upload,
+# it is not part of the submitted snapshot.
+out/
+work/
+gta6-lucia-kick-short.mp4
